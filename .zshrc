@@ -1,0 +1,42 @@
+# default browser
+if [ -n "$DISPLAY" ]; then
+  BROWSER=chromium
+fi
+
+LANG=en_US.utf8
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _expand _complete _ignored _match _approximate _prefix
+zstyle ':completion:*' completions 1
+zstyle ':completion:*' glob 1
+zstyle ':completion:*' insert-unambiguous true
+zstyle ':completion:*' match-original both
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' max-errors 4
+zstyle ':completion:*' substitute 1
+zstyle :compinstall filename '/home/danking/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory autocd extendedglob notify
+unsetopt beep
+bindkey -e
+# End of lines configured by zsh-newuser-install
+
+RED=$'%{\e[0;31m%}'
+BLUE=$'%{\e[0;34m%}'
+NORM=$'%{\e[m%}'
+PREVIOUS_RETVAL="$RED%(?..%? )$NORM"
+USER_AND_HOST="$BLUE%n$NORM@%m"
+PS1="$PREVIOUS_RETVAL$USER_AND_HOST # "
+
+# aliases
+
+alias ls="ls --color"
+
