@@ -1,3 +1,5 @@
+PATH=$PATH:/home/danking/bin
+
 # default browser
 if [ -n "$DISPLAY" ]; then
   BROWSER=chromium
@@ -39,4 +41,6 @@ PS1="$PREVIOUS_RETVAL$USER_AND_HOST # "
 # aliases
 
 alias ls="ls --color"
+alias ll="ls -l"
+alias rm="rm -i"
 
