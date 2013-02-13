@@ -42,5 +42,6 @@ PS1="$PREVIOUS_RETVAL$USER_AND_HOST # "
 
 alias ls="ls --color"
 alias ll="ls -l"
+alias la="ll -a"
 alias rm="rm -i"
 
