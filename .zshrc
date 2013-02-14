@@ -1,5 +1,6 @@
-# default browser
 PATH=$PATH:/home/danking/bin
+
+# default browser
 if [ -n "$DISPLAY" ]; then
   BROWSER=chromium
 fi
@@ -46,4 +47,5 @@ alias vi=vim
 alias e=emacsclient
 alias twfeed="bti --user danking00 --action friends"
 alias g=git
+alias rm="rm -i"
 
