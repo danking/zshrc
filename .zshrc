@@ -1,4 +1,5 @@
 # default browser
+PATH=$PATH:/home/danking/bin
 if [ -n "$DISPLAY" ]; then
   BROWSER=chromium
 fi
@@ -39,4 +40,10 @@ PS1="$PREVIOUS_RETVAL$USER_AND_HOST # "
 # aliases
 
 alias ls="ls --color"
+alias ll="ls -l"
+alias la="ll -a"
+alias vi=vim
+alias e=emacsclient
+alias twfeed="bti --user danking00 --action friends"
+alias g=git
 
