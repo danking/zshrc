@@ -51,4 +51,5 @@ alias g=git
 alias rm="rm -i"
 alias scsh-man="chromium 'http://www.scsh.net/docu/html/man-Z-H-1.html#node_toc_start'"
 alias scsh-index="chromium 'http://www.scsh.net/docu/html/man-Z-H-13.html#node_index_start'"
-
+alias c=curl
+alias wget="curl -O"
