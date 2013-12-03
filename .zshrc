@@ -1,5 +1,3 @@
-PATH=$PATH:/home/danking/bin
-
 # default browser
 if [ -n "$DISPLAY" ]; then
   BROWSER=chromium
@@ -40,11 +38,11 @@ PS1="$PREVIOUS_RETVAL$USER_AND_HOST # "
 
 # aliases
 
-alias ls="ls --color"
+alias ls="ls -G"
 alias ll="ls -l"
 alias la="ll -a"
 alias vi=vim
-alias emacs="emacsclient --alternate-editor emacs"
+# alias emacs="emacsclient --alternate-editor emacs"
 alias e=emacs
 alias twfeed="bti --user danking00 --action friends"
 alias g=git
@@ -54,3 +52,7 @@ alias scsh-index="chromium 'http://www.scsh.net/docu/html/man-Z-H-13.html#node_i
 alias c=curl
 alias wget="curl -O"
 alias recentdl="xdg-open ~/downloads/*(.om[1])"
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
+# Setting for the new UTF-8 terminal support in Lion
+LC_CTYPE=en_US.UTF-8
+LC_ALL=en_US.UTF-8
