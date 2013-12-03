@@ -51,7 +51,7 @@ alias scsh-man="chromium 'http://www.scsh.net/docu/html/man-Z-H-1.html#node_toc_
 alias scsh-index="chromium 'http://www.scsh.net/docu/html/man-Z-H-13.html#node_index_start'"
 alias c=curl
 alias wget="curl -O"
-alias recentdl="xdg-open ~/downloads/*(.om[1])"
+alias recentdl="open ~/downloads/*(.om[1])"
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
 # Setting for the new UTF-8 terminal support in Lion
 LC_CTYPE=en_US.UTF-8
