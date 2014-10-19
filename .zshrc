@@ -52,7 +52,10 @@ alias scsh-index="chromium 'http://www.scsh.net/docu/html/man-Z-H-13.html#node_i
 alias c=curl
 alias wget="curl -O"
 alias recentdl="open ~/downloads/*(.om[1])"
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin
+alias rack="rlwrap racket"
+
+export PATH=$HOME/.cabal/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/texbin:/Users/danking/bin
 # Setting for the new UTF-8 terminal support in Lion
 LC_CTYPE=en_US.UTF-8
 LC_ALL=en_US.UTF-8
+LANG=en_US.UTF-8
