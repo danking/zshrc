@@ -54,3 +54,5 @@ alias scsh-index="chromium 'http://www.scsh.net/docu/html/man-Z-H-13.html#node_i
 alias c=curl
 alias wget="curl -O"
 alias recentdl="xdg-open ~/downloads/*(.om[1])"
+alias vless='vim -u /usr/share/vim/*/macros/less.vim'
+
